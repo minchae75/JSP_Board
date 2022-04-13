@@ -100,7 +100,7 @@ public class BoardDAO {
 		return List;
 	}
 	
-	//한페이지에 20개식 보여주며 그 이상이 넘어가면 다음페이지로 넘김
+	//한페이지에 20개씩 보여주며 그 이상이 넘어가면 다음페이지로 넘김
 	public boolean nextPage(int pageNum) {
 		String SQL = "SELECT * FROM board WHERE board_id < ? ORDER BY board_id DESC LIMIT 20";
 		try {

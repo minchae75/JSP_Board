@@ -46,7 +46,7 @@ request.setCharacterEncoding("UTF-8");
 				BoardDAO boardrDao = new BoardDAO();
 				int result = boardrDao.update(board_id,board.getTitle(), board.getContent(),board.getPassword()); 
 				
-				if(result >= 0){
+				if(result >= 0 && board.getPassword() != null){
 					PrintWriter script = response.getWriter();
 					script.println("<script>");
 					script.println("alert('성공적으로 수정되었습니다.')");
@@ -55,9 +55,15 @@ request.setCharacterEncoding("UTF-8");
 				} else if(result == -1){
 					PrintWriter script = response.getWriter();
 					script.println("<script>");
-					script.println("alert('글 등록에 실패하였습니다.')");
+					script.println("alert('글 수정에 실패하였습니다.')");
 					script.println("history.back()");
 					script.println("</script>");	
+				} else {
+					PrintWriter script = response.getWriter();
+					script.println("<script>");
+					script.println("alert('비밀번호를 입력하세요.')");
+					script.println("history.back()");
+					script.println("</script>");		
 				}
 			}
 		

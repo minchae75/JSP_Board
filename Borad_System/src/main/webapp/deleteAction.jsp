@@ -36,7 +36,7 @@ request.setCharacterEncoding("UTF-8");
 			BoardDAO boardrDao = new BoardDAO();
 			int result = boardrDao.delete(board_id,board.getPassword()); 
 			
-			if(result >= 0){
+			if(result >= 0 && board.getPassword() != null){
 				PrintWriter script = response.getWriter();
 				script.println("<script>");
 				script.println("alert('성공적으로 삭제되었습니다.')");
@@ -48,6 +48,13 @@ request.setCharacterEncoding("UTF-8");
 				script.println("alert('글 삭제에 실패하였습니다.')");
 				script.println("history.back()");
 				script.println("</script>");	
+			}
+			else {
+				PrintWriter script = response.getWriter();
+				script.println("<script>");
+				script.println("alert('비밀번호를 입력하세요.')");
+				script.println("history.back()");
+				script.println("</script>");		
 			}
 	%>
 
