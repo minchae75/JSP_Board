@@ -7,6 +7,10 @@ DB는 MY-SQL사용하였으며
 글 작성/수정/삭제가 가능하며
 작성 시 입력한 비밀번호와 일치해야만 수정과 삭제가 이루어집니다.
 
-실행 화면
-<br>
-<img src="https://user-images.githubusercontent.com/97521070/163520663-b19b47e8-99f5-461f-be91-fd43663cf1ee.gif">
+게시물 작성
+<br><br>
+<img src="https://user-images.githubusercontent.com/97521070/163523615-48f7db21-e19e-4326-a7e4-13ab4fbb9805.gif">
+<br><br>
+게시물 수정삭제
+<br><br>
+<img src="https://user-images.githubusercontent.com/97521070/163523693-5e600094-6261-4ebc-a368-4a4f7ee9c512.gif">
