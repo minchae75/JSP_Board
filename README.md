@@ -13,4 +13,4 @@ DB는 MY-SQL사용하였으며
 <br><br>
 게시물 수정삭제
 <br><br>
-<img src="https://user-images.githubusercontent.com/97521070/163523693-5e600094-6261-4ebc-a368-4a4f7ee9c512.gif">
+# <img src="https://user-images.githubusercontent.com/97521070/163523693-5e600094-6261-4ebc-a368-4a4f7ee9c512.gif">
